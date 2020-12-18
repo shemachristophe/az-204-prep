@@ -1,0 +1,9 @@
+#check your RGs available
+az group list
+
+#provision VM
+az vm create --resource-group az-204-4rg --name devVM --image Win2016Datacenter --admin-username devadminuser
+
+#open up port to allow web traffic
+az vm open-port --port 80 --resource-group az-204-4rg --name myVM
+
