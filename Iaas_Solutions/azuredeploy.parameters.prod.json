@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storagePrefix": {
+        "value": "proddata"
+      },
+      "storageSKU": {
+        "value": "Standard_GRS"
+      },
+      "appServicePlanName": {
+        "value": "az204labplan"
+      },
+      "webAppName": {
+        "value": "az204labwebapp"
+      },
+      "resourceTags": {
+        "value": {
+          "Environment": "Production",
+          "Project": "Tutorial"
+        }
+      }
+    }
+  }
